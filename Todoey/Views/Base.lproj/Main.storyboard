@@ -39,7 +39,8 @@
                             <outlet property="delegate" destination="cLS-gT-Xkg" id="SDV-ns-VZJ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="grM-91-Lsq">
+                    <navigationItem key="navigationItem" title="Items" leftItemsSupplementBackButton="YES" id="grM-91-Lsq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Tvz-dG-JOk"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5ax-fh-hPr">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -60,6 +61,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gcr-tH-q6V">
                         <rect key="frame" x="0.0" y="47" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                         <navigationBarAppearance key="standardAppearance">
                             <color key="backgroundColor" systemColor="systemBlueColor"/>
                             <textAttributes key="titleTextAttributes">
@@ -67,7 +75,7 @@
                             </textAttributes>
                         </navigationBarAppearance>
                         <navigationBarAppearance key="scrollEdgeAppearance">
-                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <textAttributes key="titleTextAttributes">
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </textAttributes>

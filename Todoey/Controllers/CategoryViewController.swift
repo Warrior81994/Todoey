@@ -71,7 +71,7 @@ class CategoryViewController: UITableViewController {
         
         let request : NSFetchRequest<Category> = Category.fetchRequest()
         
-        do{
+        do {
             categories = try context.fetch(request)
         } catch {
             print("Error loading categories \(error)")
@@ -111,6 +111,6 @@ class CategoryViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
         
     }
-
+    
     
 }

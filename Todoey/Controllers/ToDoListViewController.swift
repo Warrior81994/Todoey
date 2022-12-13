@@ -12,7 +12,7 @@ class ToDoListViewController: UITableViewController {
     var itemArray = [Item]()
         
         var selectedCategory : Category? {
-            didSet{
+            didSet {
                 loadItems()
             }
         }
@@ -143,12 +143,12 @@ extension ToDoListViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         let request: NSFetchRequest<Item> = Item.fetchRequest()
-        
-        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+            
+        let predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
         
         request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
         
-        loadItems(with: request)
+        loadItems(with: request, predicate: predicate)
         
     }
     
